@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Matador.MainPage">
+
+    <Grid
+        ColumnDefinitions="8*,8*"
+        RowDefinitions="2*,*,2*"
+        x:Name="backGrid"
+        >
+        <Grid
+            x:Name="board"
+            BackgroundColor="Gray"
+            Grid.RowSpan="10"
+            MinimumHeightRequest="600"
+            MinimumWidthRequest="600"
+            WidthRequest="750"
+            HeightRequest="750"
+            HorizontalOptions="StartAndExpand"
+            VerticalOptions="CenterAndExpand"
+            
+            >
+            <Ellipse
+                x:Name="RedCircle"
+                x:FieldModifier="public"
+                Fill="Red"
+                Aspect="Uniform"
+                MinimumWidthRequest="600"
+                MinimumHeightRequest="600"
+                WidthRequest="750"
+                HeightRequest="750"
+                ZIndex="10"
+                
+                />
+            <Ellipse
+                Fill="green"
+                Aspect="Uniform"
+                WidthRequest="500"
+                HeightRequest="500"
+                ZIndex="20"
+                
+                />
+
+        </Grid>
+        
+        
+        
+    </Grid>
+</ContentPage>
